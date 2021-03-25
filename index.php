@@ -12,23 +12,39 @@
       {
         width: 500px;
       }
+
+      .button_right 
+      {
+        text-align: right;
+      }
+
+      form 
+      {
+        margin-top: 20px;
+      }
     
     </style>
   </head>
   <body>
     
     <div class="container" id="tamanhoContainer" style="margin-top: 40px;">
-      <form>
+      <h4>Formulário de Cadastro</h4>
+      <form action="_inserir_produto.php" method="POST">
           <div class="mb-3">
-            <label class="form-label">Nro Produto</label>
-            <input type="number" class="form-control" placeholder="Insira o número do produto">
+            <label class="form-label">Número do Produto</label>
+            <input name="nroproduto" type="number" class="form-control" placeholder="Insira o número do produto" required autocomplete="off">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Nome Produto</label>
+            <input name="nomeproduto" type="text" class="form-control" placeholder="Insira o nome do produto" required autocomplete="off">
           </div>
 
           <div class="mb-3">
           <label class="form-label">Categoria</label>
-            <select class="form-select" aria-label="Default select example">
+            <select name="categoria" class="form-select" aria-label="Default select example">
               <option selected>Selecione uma categoria</option>
-              <option value="1">Periféricos</option>
+              <option value="1">Periféricos</option> 
               <option value="2">Hardware</option>
               <option value="3">Software</option>
               <option value="4">Celulares</option>
@@ -36,18 +52,13 @@
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Nome Produto</label>
-            <input type="text" class="form-control" placeholder="Insira o nome do produto">
-          </div>
-
-          <div class="mb-3">
             <label class="form-label">Quantidade</label>
-            <input type="number" class="form-control" placeholder="Insira a quantidade do produto">
+            <input name="quantidade" type="number" class="form-control" placeholder="Insira a quantidade do produto" required autocomplete="off">
           </div>
 
           <div class="mb-3">
           <label class="form-label">Fornecedor</label>
-            <select class="form-select" aria-label="Default select example">
+            <select name="fornecedor" class="form-select" aria-label="Default select example">
               <option selected>Selecione um Fornecedor</option>
               <option value="1">Fornecedor A</option>
               <option value="2">Fornecedor B</option>
@@ -55,7 +66,9 @@
             </select>
           </div>
 
-          <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
+          <div class="button_right"> 
+            <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
+          </div>
       </form>
     </div>
 
