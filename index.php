@@ -22,12 +22,40 @@
       {
         margin-top: 20px;
       }
+
+      .container
+      {
+        margin-top: 8%;
+        padding: 40px;
+        background: #fff;
+        border-radius: 40px 10px;
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      body
+      {
+        background: #1A1B41;
+      }
+      
+      .form-label
+      {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+      }
+
+      h4 
+      {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 20px;
+      }
     
     </style>
   </head>
   <body>
     
-    <div class="container" id="tamanhoContainer" style="margin-top: 40px;">
+    <div class="container" id="tamanhoContainer">
       <h4>Formulário de Cadastro</h4>
       <form action="_inserir_produto.php" method="POST">
           <div class="mb-3">
@@ -44,10 +72,10 @@
           <label class="form-label">Categoria</label>
             <select name="categoria" class="form-select" aria-label="Default select example">
               <option selected>Selecione uma categoria</option>
-              <option value="1">Periféricos</option> 
-              <option value="2">Hardware</option>
-              <option value="3">Software</option>
-              <option value="4">Celulares</option>
+              <option value="Periféricos">Periféricos</option> 
+              <option value="Hardware">Hardware</option>
+              <option value="Software">Software</option>
+              <option value="Celulares">Celulares</option>
             </select>
           </div>
 
@@ -60,14 +88,14 @@
           <label class="form-label">Fornecedor</label>
             <select name="fornecedor" class="form-select" aria-label="Default select example">
               <option selected>Selecione um Fornecedor</option>
-              <option value="1">Fornecedor A</option>
-              <option value="2">Fornecedor B</option>
-              <option value="3">Fornecedor C</option>
+              <option value="Fornecedor A">Fornecedor A</option>
+              <option value="Fornecedor B">Fornecedor B</option>
+              <option value="Fornecedor C">Fornecedor C</option>
             </select>
           </div>
 
           <div class="button_right"> 
-            <button type="submit" class="btn btn-success btn-sm"> Cadastrar</button>
+            <button type="submit" class="btn btn-success btn-lg"> Cadastrar</button>
           </div>
       </form>
     </div>
