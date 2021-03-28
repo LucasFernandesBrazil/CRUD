@@ -58,6 +58,7 @@
     <div class="container" id="tamanhoContainer">
       <h4>Formulário de Cadastro</h4>
       <form action="_inserir_produto.php" method="POST">
+        
           <div class="mb-3">
             <label class="form-label">Número do Produto</label>
             <input name="nroproduto" type="number" class="form-control" placeholder="Insira o número do produto" required autocomplete="off">

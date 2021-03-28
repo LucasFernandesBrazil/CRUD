@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,24 @@
             margin-top: 40px;
         }
 
+        body 
+        {
+            background-color: black;
+        }
+
+        .container h3 
+        {
+            color: #fff;
+            font-weight: 700;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        table 
+        {
+            border: 10px solid #fff;
+        }
+
     </style>
 </head>
 <body>
@@ -20,7 +38,7 @@
 <div class="container">
     <h3>Lista de produtos</h3>
     <br>
-    <table class="table">
+    <table class="table table-dark table-hover">
         <thead>
             <tr>
             <th scope="col">Nro Produto</th>
@@ -57,7 +75,9 @@
 
                <td><?php echo $fornecedor ?></td>
 
-               <td><a class="btn btn-warning btn-sm" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp&nbspEditar</a></td>
+               <td><a class="btn btn-warning btn-sm" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp&nbspEditar</a>
+                   <a class="btn btn-danger btn-sm" href="deletar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-trash-alt"></i></i>&nbsp&nbspDeletar</a>
+               </td>
             </tr>
 
                <?php  }  ?>
