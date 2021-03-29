@@ -37,14 +37,14 @@ $inserir = mysqli_query($conexao, $sql);
         width: 500px;
         margin-top: 15%;
         padding: 40px;
-        background: #5DD39E;
+        background: #083D77;
         border-radius: 40px 10px;
         box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5);
       }
 
       body
       {
-        background: #1A1B41;
+        background: #242423;
       }
       
       .form-label
@@ -59,7 +59,7 @@ $inserir = mysqli_query($conexao, $sql);
         font-size: 30px;
         font-weight: 700;
         padding-bottom: 20px;
-        color: #1A1B41;
+        color: #fff;
       }
     
     </style>
@@ -70,7 +70,7 @@ $inserir = mysqli_query($conexao, $sql);
     </center>
     <div style="padding-top: 20px;">
     <center>
-        <a href="index.php" role="button" class="btn btn-lg btn-primary">Cadastrar novo ítem</a>
+        <a href="adicionar_produto.php" role="button" class="btn btn-lg btn-primary">Cadastrar novo ítem</a>
     </center>
     </div>
 </div>
