@@ -38,14 +38,14 @@ $atualizar = mysqli_query($conexao, $sql);
         width: 500px;
         margin-top: 15%;
         padding: 40px;
-        background: #5DD39E;
+        background: #7FB069;
         border-radius: 40px 10px;
         box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5);
       }
 
       body
       {
-        background: #1A1B41;
+        background: #242423;
       }
       
       .form-label
@@ -60,7 +60,7 @@ $atualizar = mysqli_query($conexao, $sql);
         font-size: 30px;
         font-weight: 700;
         padding-bottom: 20px;
-        color: #1A1B41;
+        color: #fff;
       }
     
     </style>

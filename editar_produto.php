@@ -37,14 +37,15 @@ echo $id = $_GET['id'];
       {
         margin-top: 8%;
         padding: 40px;
-        background: #fff;
+        background: #083D77;
         border-radius: 40px 10px;
         box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5);
+        color: #fff;
       }
 
       body
       {
-        background: #1A1B41;
+        background: #242423;
       }
       
       .form-label
@@ -59,6 +60,12 @@ echo $id = $_GET['id'];
         font-size: 30px;
         font-weight: 700;
         padding-bottom: 20px;
+      }
+
+      .botao_voltar 
+      {
+        text-align: left;
+        margin-top: -11%;
       }
     
     </style>
@@ -127,7 +134,13 @@ echo $id = $_GET['id'];
           </div>
           <?php } ?>
       </form>
+
+      
+      <div class="botao_voltar">
+      <a href="listar_produtos.php" role="button" class="btn btn-lg btn-primary">Voltar</a>
+      </div>
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

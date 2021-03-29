@@ -15,7 +15,7 @@
 
         body 
         {
-            background-color: black;
+            background-color: #083D77;
         }
 
         .container h3 
@@ -26,10 +26,7 @@
             text-align: center;
         }
 
-        table 
-        {
-            border: 10px solid #fff;
-        }
+        
 
     </style>
 </head>
@@ -38,7 +35,7 @@
 <div class="container">
     <h3>Lista de produtos</h3>
     <br>
-    <table class="table table-dark table-hover">
+    <table class="table table-dark table-hover ">
         <thead>
             <tr>
             <th scope="col">Nro Produto</th>

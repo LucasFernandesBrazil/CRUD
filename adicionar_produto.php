@@ -27,14 +27,15 @@
       {
         margin-top: 8%;
         padding: 40px;
-        background: #fff;
+        background: #083D77;
         border-radius: 40px 10px;
         box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5);
+        color: white;
       }
 
       body
       {
-        background: #1A1B41;
+        background: #242423;
       }
       
       .form-label
@@ -49,6 +50,12 @@
         font-size: 30px;
         font-weight: 700;
         padding-bottom: 20px;
+      }
+
+      .botao_voltar 
+      {
+        text-align: left;
+        margin-top: -11%;
       }
     
     </style>
@@ -100,7 +107,7 @@
           </div>
       </form>
 
-      <div style="text-align: left;">
+      <div class="botao_voltar">
       <a href="index.php" role="button" class="btn btn-lg btn-primary">Voltar</a>
       </div>
     </div>
